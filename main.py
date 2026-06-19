@@ -66,6 +66,7 @@ def solicitar_vacaciones(empleados):
 
     if dias <= 0:
         print("\nLa cantidad de días debe ser mayor que cero.\n")
+        
     elif dias <= empleado["dias_disponibles"]:
         empleado["estado"] = "APROBADA"
         print("\nSolicitud registrada correctamente.")
@@ -75,7 +76,6 @@ def solicitar_vacaciones(empleados):
         empleado["estado"] = "RECHAZADA"
         print("\nSaldo insuficiente.")
         print("Estado: RECHAZADA\n")
-
 
 def menu():
     empleados = cargar_empleados()
