@@ -91,7 +91,7 @@ def menu():
         print("1. Consultar saldo")
         print("2. Solicitar vacaciones")
         print("3. Ver estado de solicitud")
-        print("4.Salir")
+        print("4. Salir")
 
         opcion = input("\nSeleccione una opción: ")
 
