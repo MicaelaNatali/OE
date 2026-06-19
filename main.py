@@ -74,9 +74,10 @@ def solicitar_vacaciones(empleados):
         print("Estado: PENDIENTE DE APROBACIÓN\n")
 
     else:
+        empleado["estado"] = "RECHAZADA"
         print("\nSaldo insuficiente.")
         print("Solicitud rechazada.\n")
-
+        print("Estado: RECHAZADA\n")
 
 def menu():
     empleados = cargar_empleados()
